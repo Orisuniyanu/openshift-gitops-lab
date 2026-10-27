@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: prune-demo-config
-data:
-  purpose: "Testing Argo CD pruning"
-  environment: "lab"
-  message: "This ConfigMap will be deleted during the pruning exercise"
