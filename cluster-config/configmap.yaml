@@ -6,4 +6,4 @@ data:
   app_name: "iyanu-gitops-lab"
   environment: "development"
   managed_by: "argocd"
-  message: "Hello from OpenShift GitOps"
+  message: "Automatically synchronized from GitHub"
