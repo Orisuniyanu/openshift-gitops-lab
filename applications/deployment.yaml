@@ -17,3 +17,11 @@ spec:
           image: registry.access.redhat.com/ubi9/httpd-24:latest
           ports:
             - containerPort: 8080
+          volumeMounts:
+            - name: web-content
+              mountPath: /var/www/html
+              readOnly: true
+      volumes:
+        - name: web-content
+          configMap:
+            name: gitops-web-content
