@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: gitops-admin-quota
+  namespace: gitops-admin-lab
+spec:
+  hard:
+    requests.cpu: "2"
+    requests.memory: 4Gi
+    pods: "10"
+    persistentvolumeclaims: "5"
